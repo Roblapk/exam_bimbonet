@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8932B349FEA0088B705 /* LoginView.swift */; };
+		E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8952B34A6590088B705 /* RegisterView.swift */; };
+		E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8972B34A7A60088B705 /* DismissView.swift */; };
 		E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */; };
-		E1C602052B3378BB00C5627A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* ContentView.swift */; };
+		E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* AuthenticationView.swift */; };
 		E1C602072B33791500C5627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602062B33791500C5627A /* Assets.xcassets */; };
 		E1C6020A2B33791500C5627A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602092B33791500C5627A /* Preview Assets.xcassets */; };
 		E1C602112B33845100C5627A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602102B33845100C5627A /* LaunchView.swift */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E11AD8932B349FEA0088B705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E11AD8952B34A6590088B705 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E11AD8972B34A7A60088B705 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		E1C601FF2B3378BB00C5627A /* exam_bimboNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam_bimboNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exam_bimboNetApp.swift; sourceTree = "<group>"; };
-		E1C602042B3378BB00C5627A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1C602042B3378BB00C5627A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		E1C602062B33791500C5627A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C602092B33791500C5627A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1C602102B33845100C5627A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -57,7 +63,10 @@
 			children = (
 				E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */,
 				E1C602122B33859C00C5627A /* ContainerView.swift */,
-				E1C602042B3378BB00C5627A /* ContentView.swift */,
+				E1C602042B3378BB00C5627A /* AuthenticationView.swift */,
+				E11AD8932B349FEA0088B705 /* LoginView.swift */,
+				E11AD8952B34A6590088B705 /* RegisterView.swift */,
+				E11AD8972B34A7A60088B705 /* DismissView.swift */,
 				E1C602102B33845100C5627A /* LaunchView.swift */,
 				E1C602062B33791500C5627A /* Assets.xcassets */,
 				E1C602082B33791500C5627A /* Preview Content */,
@@ -144,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C602132B3385A800C5627A /* ContainerView.swift in Sources */,
-				E1C602052B3378BB00C5627A /* ContentView.swift in Sources */,
+				E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */,
+				E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */,
+				E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */,
 				E1C602112B33845100C5627A /* LaunchView.swift in Sources */,
+				E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */,
 				E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

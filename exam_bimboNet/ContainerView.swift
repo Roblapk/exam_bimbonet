@@ -13,7 +13,7 @@ struct ContainerView: View {
     
     var body: some View {
         if !isLaunchViewPresented{
-            ContentView()
+            AuthenticationView()
         }else{
             LaunchView(ispresented: $isLaunchViewPresented)
         }

@@ -11,6 +11,8 @@
 		E1C602052B3378BB00C5627A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* ContentView.swift */; };
 		E1C602072B33791500C5627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602062B33791500C5627A /* Assets.xcassets */; };
 		E1C6020A2B33791500C5627A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602092B33791500C5627A /* Preview Assets.xcassets */; };
+		E1C602112B33845100C5627A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602102B33845100C5627A /* LaunchView.swift */; };
+		E1C602132B3385A800C5627A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602122B33859C00C5627A /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E1C602042B3378BB00C5627A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1C602062B33791500C5627A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C602092B33791500C5627A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1C602102B33845100C5627A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		E1C602122B33859C00C5627A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */,
+				E1C602122B33859C00C5627A /* ContainerView.swift */,
 				E1C602042B3378BB00C5627A /* ContentView.swift */,
+				E1C602102B33845100C5627A /* LaunchView.swift */,
 				E1C602062B33791500C5627A /* Assets.xcassets */,
 				E1C602082B33791500C5627A /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C602132B3385A800C5627A /* ContainerView.swift in Sources */,
 				E1C602052B3378BB00C5627A /* ContentView.swift in Sources */,
+				E1C602112B33845100C5627A /* LaunchView.swift in Sources */,
 				E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

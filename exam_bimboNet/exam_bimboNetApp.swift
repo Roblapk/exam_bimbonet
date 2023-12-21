@@ -11,7 +11,8 @@ import SwiftUI
 struct exam_bimboNetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContainerView()
+                .preferredColorScheme(.light)
         }
     }
 }

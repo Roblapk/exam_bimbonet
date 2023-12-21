@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E103AF892B34ED5B00B91DE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103AF882B34ED5B00B91DE6 /* HomeView.swift */; };
 		E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8932B349FEA0088B705 /* LoginView.swift */; };
 		E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8952B34A6590088B705 /* RegisterView.swift */; };
 		E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8972B34A7A60088B705 /* DismissView.swift */; };
@@ -14,26 +15,33 @@
 		E11AD89D2B34BD6F0088B705 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD89C2B34BD6F0088B705 /* FirebaseAnalytics */; };
 		E11AD89F2B34BD6F0088B705 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD89E2B34BD6F0088B705 /* FirebaseAnalyticsSwift */; };
 		E11AD8A12B34BD6F0088B705 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD8A02B34BD6F0088B705 /* FirebaseAuth */; };
+		E151726C2B34CD02002040A7 /* AuthFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */; };
+		E151726E2B34CE8B002040A7 /* EmailUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726D2B34CE8B002040A7 /* EmailUser.swift */; };
+		E15172702B34D148002040A7 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726F2B34D148002040A7 /* AuthRepository.swift */; };
+		E15172722B34D2B5002040A7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15172712B34D2B4002040A7 /* AuthViewModel.swift */; };
 		E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */; };
 		E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* AuthenticationView.swift */; };
 		E1C602072B33791500C5627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602062B33791500C5627A /* Assets.xcassets */; };
 		E1C6020A2B33791500C5627A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602092B33791500C5627A /* Preview Assets.xcassets */; };
 		E1C602112B33845100C5627A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602102B33845100C5627A /* LaunchView.swift */; };
-		E1C602132B3385A800C5627A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602122B33859C00C5627A /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E103AF882B34ED5B00B91DE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E11AD8932B349FEA0088B705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E11AD8952B34A6590088B705 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E11AD8972B34A7A60088B705 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		E11AD8992B34B37E0088B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebaseDataSource.swift; sourceTree = "<group>"; };
+		E151726D2B34CE8B002040A7 /* EmailUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUser.swift; sourceTree = "<group>"; };
+		E151726F2B34D148002040A7 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		E15172712B34D2B4002040A7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		E1C601FF2B3378BB00C5627A /* exam_bimboNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam_bimboNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exam_bimboNetApp.swift; sourceTree = "<group>"; };
 		E1C602042B3378BB00C5627A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		E1C602062B33791500C5627A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C602092B33791500C5627A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1C602102B33845100C5627A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
-		E1C602122B33859C00C5627A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E103AF8A2B35048200B91DE6 /* AuthFirebaseRepository */ = {
+			isa = PBXGroup;
+			children = (
+				E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */,
+				E151726F2B34D148002040A7 /* AuthRepository.swift */,
+			);
+			path = AuthFirebaseRepository;
+			sourceTree = "<group>";
+		};
+		E103AF8B2B35051300B91DE6 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E15172712B34D2B4002040A7 /* AuthViewModel.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E103AF8C2B35060100B91DE6 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				E103AF882B34ED5B00B91DE6 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		E15172672B34CB98002040A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E103AF8C2B35060100B91DE6 /* HomeView */,
+				E15172752B34EA31002040A7 /* LaunchView */,
+				E151726A2B34CBF3002040A7 /* AuthView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E15172682B34CBBF002040A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E103AF8B2B35051300B91DE6 /* Firebase */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E15172692B34CBD9002040A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E15172732B34E964002040A7 /* AuthFirebase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E151726A2B34CBF3002040A7 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				E1C602042B3378BB00C5627A /* AuthenticationView.swift */,
+				E11AD8932B349FEA0088B705 /* LoginView.swift */,
+				E11AD8952B34A6590088B705 /* RegisterView.swift */,
+				E11AD8972B34A7A60088B705 /* DismissView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		E15172732B34E964002040A7 /* AuthFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				E151726D2B34CE8B002040A7 /* EmailUser.swift */,
+			);
+			path = AuthFirebase;
+			sourceTree = "<group>";
+		};
+		E15172742B34E98B002040A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E11AD8992B34B37E0088B705 /* GoogleService-Info.plist */,
+				E1C602062B33791500C5627A /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		E15172752B34EA31002040A7 /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				E1C602102B33845100C5627A /* LaunchView.swift */,
+			);
+			path = LaunchView;
+			sourceTree = "<group>";
+		};
 		E1C601F62B3378B500C5627A = {
 			isa = PBXGroup;
 			children = (
@@ -70,15 +165,12 @@
 			isa = PBXGroup;
 			children = (
 				E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */,
-				E1C602122B33859C00C5627A /* ContainerView.swift */,
-				E1C602042B3378BB00C5627A /* AuthenticationView.swift */,
-				E11AD8932B349FEA0088B705 /* LoginView.swift */,
-				E11AD8952B34A6590088B705 /* RegisterView.swift */,
-				E11AD8972B34A7A60088B705 /* DismissView.swift */,
-				E1C602102B33845100C5627A /* LaunchView.swift */,
-				E11AD8992B34B37E0088B705 /* GoogleService-Info.plist */,
-				E1C602062B33791500C5627A /* Assets.xcassets */,
+				E103AF8A2B35048200B91DE6 /* AuthFirebaseRepository */,
+				E15172692B34CBD9002040A7 /* Model */,
+				E15172672B34CB98002040A7 /* View */,
+				E15172682B34CBBF002040A7 /* ViewModel */,
 				E1C602082B33791500C5627A /* Preview Content */,
+				E15172742B34E98B002040A7 /* Support Files */,
 			);
 			path = exam_bimboNet;
 			sourceTree = "<group>";
@@ -170,11 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C602132B3385A800C5627A /* ContainerView.swift in Sources */,
 				E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */,
+				E151726E2B34CE8B002040A7 /* EmailUser.swift in Sources */,
+				E15172702B34D148002040A7 /* AuthRepository.swift in Sources */,
 				E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */,
 				E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */,
+				E103AF892B34ED5B00B91DE6 /* HomeView.swift in Sources */,
 				E1C602112B33845100C5627A /* LaunchView.swift in Sources */,
+				E15172722B34D2B5002040A7 /* AuthViewModel.swift in Sources */,
+				E151726C2B34CD02002040A7 /* AuthFirebaseDataSource.swift in Sources */,
 				E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */,
 				E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */,
 			);

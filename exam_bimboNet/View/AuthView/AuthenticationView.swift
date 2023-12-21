@@ -7,17 +7,9 @@
 
 import SwiftUI
 
-enum AuthenticationSheetView: String, Identifiable{
-    case register
-    case login
-    
-    var id: String{
-        return rawValue
-    }
-}
-
 struct AuthenticationView: View {
     
+    @ObservedObject var authViewModel: AuthViewModel
     @State private var authenticationSheetView: AuthenticationSheetView?
     
     var body: some View {
@@ -54,10 +46,19 @@ struct AuthenticationView: View {
         .padding(.top, 50)
         .sheet(item: $authenticationSheetView) { whichSheet in
             switch whichSheet{
-                case .login: LoginView()
-                case .register: RegisterView()
+                case .login: LoginView(authViewModel: authViewModel)
+            case .register: RegisterView(authViewModel: authViewModel)
             }
         }
+    }
+}
+
+enum AuthenticationSheetView: String, Identifiable{
+    case register
+    case login
+    
+    var id: String{
+        return rawValue
     }
 }
 

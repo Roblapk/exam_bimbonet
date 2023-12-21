@@ -22,10 +22,22 @@ struct exam_bimboNetApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var authViewModel = AuthViewModel()
+    @State private var isLaunchViewPresented = true
+    
     var body: some Scene {
         WindowGroup {
-            ContainerView()
-                .preferredColorScheme(.light)
+            if !isLaunchViewPresented{
+                if let _ = authViewModel.emailUser{
+                    HomeView(authViewModel: authViewModel)
+                        .preferredColorScheme(.light)
+                }else{
+                    AuthenticationView(authViewModel: authViewModel)
+                        .preferredColorScheme(.light)
+                }
+            }else{
+                LaunchView(ispresented: $isLaunchViewPresented)
+            }
         }
     }
 }

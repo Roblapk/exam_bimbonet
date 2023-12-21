@@ -19,7 +19,7 @@ struct LaunchView: View {
     
     var body: some View {
         ZStack{
-            Color.black.ignoresSafeArea()
+            Color.gray.ignoresSafeArea()
             
             ZStack{
                 Image(systemName: "paperplane")

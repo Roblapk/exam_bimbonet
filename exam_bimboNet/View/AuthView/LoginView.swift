@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @ObservedObject var authViewModel: AuthViewModel
+    
     @State var textFEmail: String = ""
     @State var textFPassword: String = ""
     
@@ -32,14 +34,23 @@ struct LoginView: View {
                     .padding(.top, 10)
                     .padding(.bottom, 10)
                 TextField("Correo Electrónico", text: $textFEmail)
-                TextField("Contraseña", text: $textFPassword)
+                SecureField("Contraseña", text: $textFPassword)
                 Button("Iniciar Sesión"){
-                    print("login")
+                    authViewModel.loginUser(email: textFEmail,
+                                            password: textFPassword)
                 }
                 .padding(.top, 20)
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.roundedRectangle(radius: 10))
                 .tint(.gray)
+                if let errorMessage = authViewModel.errorMessage{
+                    Text(errorMessage)
+                        .bold()
+                        .font(.body)
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 25)
+                }
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 50)

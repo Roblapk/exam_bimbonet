@@ -59,4 +59,8 @@ final class AuthViewModel: ObservableObject{
         }
     }
     
+    func saveDataToFirebase(_ databaseSpaceships: [SpaceshipModel]){
+        authRepository.saveDataToFirebase(databaseSpaceships)
+    }
+    
 }

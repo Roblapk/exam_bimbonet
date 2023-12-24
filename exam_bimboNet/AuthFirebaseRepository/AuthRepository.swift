@@ -32,4 +32,8 @@ final class AuthRepository{
         try authFirebaseDataSource.logoutEmailUser()
     }
     
+    func saveDataToFirebase(_ databaseSpaceships: [SpaceshipModel]){
+        authFirebaseDataSource.saveDataToFirebase(databaseSpaceships)
+    }
+    
 }

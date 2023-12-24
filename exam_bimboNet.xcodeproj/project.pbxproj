@@ -34,6 +34,7 @@
 		E17FD2212B3536AA00C762D1 /* SpaceshipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2202B3536AA00C762D1 /* SpaceshipModel.swift */; };
 		E17FD2232B35403C00C762D1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2222B35403C00C762D1 /* APIService.swift */; };
 		E17FD2262B35427100C762D1 /* SpaceshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2252B35427100C762D1 /* SpaceshipViewModel.swift */; };
+		E1A751942B37F7FE0090D516 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E1A751932B37F7FE0090D516 /* FirebaseDatabase */; };
 		E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */; };
 		E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* AuthenticationView.swift */; };
 		E1C602072B33791500C5627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602062B33791500C5627A /* Assets.xcassets */; };
@@ -55,7 +56,7 @@
 		E136EC8D2B3632EE00976A1C /* DetailSpaceshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpaceshipView.swift; sourceTree = "<group>"; };
 		E13C34A72B37954D007D0EE0 /* YTWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTWrapperView.swift; sourceTree = "<group>"; };
 		E13C34AA2B379B51007D0EE0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "exam-bimboNet-Info.plist"; path = "exam_bimboNet/exam-bimboNet-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "exam-bimboNet-Info.plist"; path = "exam_bimboNet/Support Files/exam-bimboNet-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E13C34AD2B37C8FC007D0EE0 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebaseDataSource.swift; sourceTree = "<group>"; };
 		E151726D2B34CE8B002040A7 /* EmailUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUser.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 				E103AF8F2B350B3B00B91DE6 /* Alamofire in Frameworks */,
 				E11AD8A12B34BD6F0088B705 /* FirebaseAuth in Frameworks */,
 				E11AD89D2B34BD6F0088B705 /* FirebaseAnalytics in Frameworks */,
+				E1A751942B37F7FE0090D516 /* FirebaseDatabase in Frameworks */,
 				E12226EA2B377E1B00FC6D09 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				E11AD8992B34B37E0088B705 /* GoogleService-Info.plist */,
+				E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */,
 				E1C602062B33791500C5627A /* Assets.xcassets */,
 			);
 			path = "Support Files";
@@ -226,11 +229,27 @@
 			path = APIRest;
 			sourceTree = "<group>";
 		};
+		E1A751912B37E6AB0090D516 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E13C34AD2B37C8FC007D0EE0 /* Globals.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E1A751922B37F7FE0090D516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1C601F62B3378B500C5627A = {
 			isa = PBXGroup;
 			children = (
 				E1C602012B3378BB00C5627A /* exam_bimboNet */,
 				E1C602002B3378BB00C5627A /* Products */,
+				E1A751922B37F7FE0090D516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,8 +264,8 @@
 		E1C602012B3378BB00C5627A /* exam_bimboNet */ = {
 			isa = PBXGroup;
 			children = (
-				E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */,
 				E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */,
+				E1A751912B37E6AB0090D516 /* Helpers */,
 				E103AF902B3525E600B91DE6 /* Networking */,
 				E103AF8A2B35048200B91DE6 /* AuthFirebaseRepository */,
 				E15172692B34CBD9002040A7 /* Model */,
@@ -254,7 +273,6 @@
 				E15172682B34CBBF002040A7 /* ViewModel */,
 				E1C602082B33791500C5627A /* Preview Content */,
 				E15172742B34E98B002040A7 /* Support Files */,
-				E13C34AD2B37C8FC007D0EE0 /* Globals.swift */,
 			);
 			path = exam_bimboNet;
 			sourceTree = "<group>";
@@ -290,6 +308,7 @@
 				E103AF8E2B350B3B00B91DE6 /* Alamofire */,
 				E12226E22B3693AC00FC6D09 /* SDWebImageSwiftUI */,
 				E12226E92B377E1B00FC6D09 /* YouTubeiOSPlayerHelper */,
+				E1A751932B37F7FE0090D516 /* FirebaseDatabase */,
 			);
 			productName = exam_bimboNet;
 			productReference = E1C601FF2B3378BB00C5627A /* exam_bimboNet.app */;
@@ -506,7 +525,7 @@
 				DEVELOPMENT_TEAM = 6S4KUGKPJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "exam-bimboNet-Info.plist";
+				INFOPLIST_FILE = "exam_bimboNet/Support Files/exam-bimboNet-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,7 +559,7 @@
 				DEVELOPMENT_TEAM = 6S4KUGKPJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "exam-bimboNet-Info.plist";
+				INFOPLIST_FILE = "exam_bimboNet/Support Files/exam-bimboNet-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -651,6 +670,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E12226E82B377E1A00FC6D09 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;
+		};
+		E1A751932B37F7FE0090D516 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E11AD89B2B34BD6E0088B705 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

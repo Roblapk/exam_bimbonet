@@ -41,7 +41,6 @@ struct HomeView: View {
             }
         }.onAppear{
             spaceshipViewModel.getSpaceships()
-            //NetworkImg.shared.changeDateFormat(dateUtc: "2020-06-30T19:55:00.000Z")
         }
     }
 }

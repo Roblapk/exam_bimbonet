@@ -46,7 +46,7 @@ struct SpaceCellView: View {
                     .font(.subheadline)
                 Text("\(spaceship.launch_site.site_name)")
                     .font(.subheadline)
-                Text("\( spaceship.launch_date_utc)")
+                Text("\( Globals.shared.changeDateFormat(dateUtc: spaceship.launch_date_utc) )")
                     .font(.subheadline)
                 /*if spaceship.launch_date_utc != nil{
                     Text("\(NetworkImg.shared.changeDateFormat(dateUtc: spaceship.launch_date_utc))")

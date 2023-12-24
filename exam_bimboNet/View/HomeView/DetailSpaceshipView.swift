@@ -40,7 +40,7 @@ struct DetailSpaceshipView: View {
             
             VStack(alignment: .leading, spacing: 10){
                 
-                Text("Fecha de Lanzamiento: \(spaceship.launch_date_utc)")
+                Text("Fecha de Lanzamiento: \(Globals.shared.changeDateFormat(dateUtc: spaceship.launch_date_utc))")
                     .font(.subheadline)
                     .padding(.top, 3)
                 

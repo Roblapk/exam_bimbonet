@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase
 
 final class AuthFirebaseDataSource{
     
@@ -20,7 +21,7 @@ final class AuthFirebaseDataSource{
                 return
             }
             let email = authResult?.user.email ?? "No hay email"
-            print("new user \(email)")
+            //print("new user \(email)")
             completionBlock(.success(.init(email: email)))
         }
     }
@@ -42,7 +43,7 @@ final class AuthFirebaseDataSource{
                 return
             }
             let email = loginResult?.user.email ?? "No login"
-            print("user login \(email)")
+            //print("user login \(email)")
             completionBlock(.success(.init(email: email)))
         }
     }
@@ -50,5 +51,19 @@ final class AuthFirebaseDataSource{
     func logoutEmailUser() throws{
         try Auth.auth().signOut()
     }
+    
+    func saveDataToFirebase(_ databaseSpaceships: [SpaceshipModel]){
+        
+        let rooRef = Database.database().reference()
+        rooRef.child("databaseSpaceships").setValue(databaseSpaceships) {
+            (ref:DatabaseReference, error:Error?) in
+            
+            if let error = error{
+                print("error saving: \(error)")
+            }
+            print("saving \(ref)")
+        }
+    }
+        
     
 }

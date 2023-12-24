@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Combine
 
 class SpaceshipViewModel: ObservableObject{
     
     @Published var spaceships = [SpaceshipModel]()
+    @Published var isLoading = true
     
     //instance
     private let apiService: APIServiceProtocol
@@ -24,6 +26,7 @@ class SpaceshipViewModel: ObservableObject{
                 switch result{
                     case .success(let spaceships):
                         self?.spaceships = spaceships
+                        self?.isLoading = false
                     case .failure(let error):
                     print("Hubo un error: \(error.localizedDescription)")
                 }

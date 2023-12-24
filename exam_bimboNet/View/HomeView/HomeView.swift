@@ -10,25 +10,30 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var authViewModel: AuthViewModel
-    @ObservedObject var spaceshipViewModel = SpaceshipViewModel()
+    @StateObject var spaceshipViewModel = SpaceshipViewModel()
+    @EnvironmentObject var network: Network
+    @State private var showNetworkAlert = false
     
     var body: some View {
         NavigationView{
             List{
-                Section(header:
-                            Text("Lanzamientos Pasados")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.blue),
+                Section(header: Text("Lanzamientos Pasados")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.blue),
                         footer:
                             Text("Sesión del usuario: \(authViewModel.emailUser?.email ?? "No hay usuario")")
-                                .font(.subheadline)){
-                                    ForEach(spaceshipViewModel.spaceships, id: \.self) { spaceship in
-                                        NavigationLink(destination: DetailSpaceshipView(spaceship: spaceship), label: {
-                                                SpaceCellView(spaceship: spaceship)
-                                        })
-                                    }
-                                }
+                    .font(.subheadline)){
+                        if !spaceshipViewModel.isLoading{
+                            ForEach(spaceshipViewModel.spaceships, id: \.self) { spaceship in
+                                NavigationLink(destination: DetailSpaceshipView(spaceship: spaceship), label: {
+                                    SpaceCellView(spaceship: spaceship)
+                                })
+                            }
+                        }else{
+                            ProgressView("Cargando...")
+                        }
+                    }
             }
             .listStyle(.plain)
             .navigationBarTitleDisplayMode(.large)
@@ -40,9 +45,11 @@ struct HomeView: View {
                     Image(systemName: "rectangle.portrait.and.arrow.right.fill")
                 }
             }
-        }.onAppear{
+        }.task {
             spaceshipViewModel.getSpaceships()
-        }
+        }.onChange(of: network.connected){ result in
+            showNetworkAlert = result == false
+        }.alert(network.connectionDescription, isPresented: $showNetworkAlert){}
     }
 }
 

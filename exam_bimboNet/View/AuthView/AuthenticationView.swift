@@ -11,6 +11,8 @@ struct AuthenticationView: View {
     
     @ObservedObject var authViewModel: AuthViewModel
     @State private var authenticationSheetView: AuthenticationSheetView?
+    @EnvironmentObject var network: Network
+    @State private var showNetworkAlert = false
     
     var body: some View {
         VStack {
@@ -49,7 +51,9 @@ struct AuthenticationView: View {
                 case .login: LoginView(authViewModel: authViewModel)
                 case .register: RegisterView(authViewModel: authViewModel)
             }
-        }
+        }.onChange(of: network.connected){ result in
+            showNetworkAlert = result == false
+        }.alert(network.connectionDescription, isPresented: $showNetworkAlert){}
     }
 }
 

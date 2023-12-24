@@ -24,6 +24,7 @@ struct exam_bimboNetApp: App {
     
     @StateObject var authViewModel = AuthViewModel()
     @State private var isLaunchViewPresented = true
+    @StateObject var network = Network()
     
     var body: some Scene {
         WindowGroup {
@@ -31,9 +32,11 @@ struct exam_bimboNetApp: App {
                 if let _ = authViewModel.emailUser{
                     HomeView(authViewModel: authViewModel)
                         .preferredColorScheme(.light)
+                        .environmentObject(network)
                 }else{
                     AuthenticationView(authViewModel: authViewModel)
                         .preferredColorScheme(.light)
+                        .environmentObject(network)
                 }
             }else{
                 LaunchView(ispresented: $isLaunchViewPresented)

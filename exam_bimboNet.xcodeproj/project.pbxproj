@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E103AF892B34ED5B00B91DE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103AF882B34ED5B00B91DE6 /* HomeView.swift */; };
+		E103AF8F2B350B3B00B91DE6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E103AF8E2B350B3B00B91DE6 /* Alamofire */; };
+		E103AF922B35269000B91DE6 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103AF912B35269000B91DE6 /* APIRouter.swift */; };
+		E103AF942B35293900B91DE6 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103AF932B35293900B91DE6 /* RestAPIClient.swift */; };
 		E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8932B349FEA0088B705 /* LoginView.swift */; };
 		E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8952B34A6590088B705 /* RegisterView.swift */; };
 		E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AD8972B34A7A60088B705 /* DismissView.swift */; };
@@ -15,10 +18,22 @@
 		E11AD89D2B34BD6F0088B705 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD89C2B34BD6F0088B705 /* FirebaseAnalytics */; };
 		E11AD89F2B34BD6F0088B705 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD89E2B34BD6F0088B705 /* FirebaseAnalyticsSwift */; };
 		E11AD8A12B34BD6F0088B705 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E11AD8A02B34BD6F0088B705 /* FirebaseAuth */; };
+		E12226E32B3693AC00FC6D09 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E12226E22B3693AC00FC6D09 /* SDWebImageSwiftUI */; };
+		E12226E52B36960900FC6D09 /* SpaceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12226E42B36960800FC6D09 /* SpaceCellView.swift */; };
+		E12226E72B3769D200FC6D09 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12226E62B3769D000FC6D09 /* SliderView.swift */; };
+		E12226EA2B377E1B00FC6D09 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = E12226E92B377E1B00FC6D09 /* YouTubeiOSPlayerHelper */; };
+		E136EC8C2B35F82100976A1C /* ErrorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136EC8B2B35F81B00976A1C /* ErrorNetwork.swift */; };
+		E136EC8E2B3632EF00976A1C /* DetailSpaceshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136EC8D2B3632EE00976A1C /* DetailSpaceshipView.swift */; };
+		E13C34A82B37954D007D0EE0 /* YTWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C34A72B37954D007D0EE0 /* YTWrapperView.swift */; };
+		E13C34AB2B379B51007D0EE0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C34AA2B379B51007D0EE0 /* WebView.swift */; };
+		E13C34AE2B37C8FE007D0EE0 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C34AD2B37C8FC007D0EE0 /* Globals.swift */; };
 		E151726C2B34CD02002040A7 /* AuthFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */; };
 		E151726E2B34CE8B002040A7 /* EmailUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726D2B34CE8B002040A7 /* EmailUser.swift */; };
 		E15172702B34D148002040A7 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151726F2B34D148002040A7 /* AuthRepository.swift */; };
 		E15172722B34D2B5002040A7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15172712B34D2B4002040A7 /* AuthViewModel.swift */; };
+		E17FD2212B3536AA00C762D1 /* SpaceshipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2202B3536AA00C762D1 /* SpaceshipModel.swift */; };
+		E17FD2232B35403C00C762D1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2222B35403C00C762D1 /* APIService.swift */; };
+		E17FD2262B35427100C762D1 /* SpaceshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FD2252B35427100C762D1 /* SpaceshipViewModel.swift */; };
 		E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */; };
 		E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C602042B3378BB00C5627A /* AuthenticationView.swift */; };
 		E1C602072B33791500C5627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C602062B33791500C5627A /* Assets.xcassets */; };
@@ -28,14 +43,27 @@
 
 /* Begin PBXFileReference section */
 		E103AF882B34ED5B00B91DE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E103AF912B35269000B91DE6 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		E103AF932B35293900B91DE6 /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
 		E11AD8932B349FEA0088B705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E11AD8952B34A6590088B705 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E11AD8972B34A7A60088B705 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		E11AD8992B34B37E0088B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E12226E42B36960800FC6D09 /* SpaceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCellView.swift; sourceTree = "<group>"; };
+		E12226E62B3769D000FC6D09 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		E136EC8B2B35F81B00976A1C /* ErrorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetwork.swift; sourceTree = "<group>"; };
+		E136EC8D2B3632EE00976A1C /* DetailSpaceshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpaceshipView.swift; sourceTree = "<group>"; };
+		E13C34A72B37954D007D0EE0 /* YTWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTWrapperView.swift; sourceTree = "<group>"; };
+		E13C34AA2B379B51007D0EE0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "exam-bimboNet-Info.plist"; path = "exam_bimboNet/exam-bimboNet-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E13C34AD2B37C8FC007D0EE0 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		E151726B2B34CD02002040A7 /* AuthFirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFirebaseDataSource.swift; sourceTree = "<group>"; };
 		E151726D2B34CE8B002040A7 /* EmailUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUser.swift; sourceTree = "<group>"; };
 		E151726F2B34D148002040A7 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		E15172712B34D2B4002040A7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E17FD2202B3536AA00C762D1 /* SpaceshipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceshipModel.swift; sourceTree = "<group>"; };
+		E17FD2222B35403C00C762D1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E17FD2252B35427100C762D1 /* SpaceshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceshipViewModel.swift; sourceTree = "<group>"; };
 		E1C601FF2B3378BB00C5627A /* exam_bimboNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam_bimboNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exam_bimboNetApp.swift; sourceTree = "<group>"; };
 		E1C602042B3378BB00C5627A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -49,9 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12226E32B3693AC00FC6D09 /* SDWebImageSwiftUI in Frameworks */,
 				E11AD89F2B34BD6F0088B705 /* FirebaseAnalyticsSwift in Frameworks */,
+				E103AF8F2B350B3B00B91DE6 /* Alamofire in Frameworks */,
 				E11AD8A12B34BD6F0088B705 /* FirebaseAuth in Frameworks */,
 				E11AD89D2B34BD6F0088B705 /* FirebaseAnalytics in Frameworks */,
+				E12226EA2B377E1B00FC6D09 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +109,49 @@
 		E103AF8C2B35060100B91DE6 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				E13C34A92B379B3C007D0EE0 /* WebView */,
+				E12226EB2B378D5300FC6D09 /* YoutubeHelperPlayer */,
 				E103AF882B34ED5B00B91DE6 /* HomeView.swift */,
+				E12226E42B36960800FC6D09 /* SpaceCellView.swift */,
+				E136EC8D2B3632EE00976A1C /* DetailSpaceshipView.swift */,
+				E12226E62B3769D000FC6D09 /* SliderView.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		E103AF902B3525E600B91DE6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E103AF912B35269000B91DE6 /* APIRouter.swift */,
+				E136EC8B2B35F81B00976A1C /* ErrorNetwork.swift */,
+				E103AF932B35293900B91DE6 /* RestAPIClient.swift */,
+				E17FD2222B35403C00C762D1 /* APIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E103AF952B35338D00B91DE6 /* Spaceship */ = {
+			isa = PBXGroup;
+			children = (
+				E17FD2202B3536AA00C762D1 /* SpaceshipModel.swift */,
+			);
+			path = Spaceship;
+			sourceTree = "<group>";
+		};
+		E12226EB2B378D5300FC6D09 /* YoutubeHelperPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E13C34A72B37954D007D0EE0 /* YTWrapperView.swift */,
+			);
+			path = YoutubeHelperPlayer;
+			sourceTree = "<group>";
+		};
+		E13C34A92B379B3C007D0EE0 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				E13C34AA2B379B51007D0EE0 /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		E15172672B34CB98002040A7 /* View */ = {
@@ -96,6 +167,7 @@
 		E15172682B34CBBF002040A7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E17FD2242B35422E00C762D1 /* APIRest */,
 				E103AF8B2B35051300B91DE6 /* Firebase */,
 			);
 			path = ViewModel;
@@ -104,6 +176,7 @@
 		E15172692B34CBD9002040A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E103AF952B35338D00B91DE6 /* Spaceship */,
 				E15172732B34E964002040A7 /* AuthFirebase */,
 			);
 			path = Model;
@@ -145,6 +218,14 @@
 			path = LaunchView;
 			sourceTree = "<group>";
 		};
+		E17FD2242B35422E00C762D1 /* APIRest */ = {
+			isa = PBXGroup;
+			children = (
+				E17FD2252B35427100C762D1 /* SpaceshipViewModel.swift */,
+			);
+			path = APIRest;
+			sourceTree = "<group>";
+		};
 		E1C601F62B3378B500C5627A = {
 			isa = PBXGroup;
 			children = (
@@ -164,13 +245,16 @@
 		E1C602012B3378BB00C5627A /* exam_bimboNet */ = {
 			isa = PBXGroup;
 			children = (
+				E13C34AC2B37AA1C007D0EE0 /* exam-bimboNet-Info.plist */,
 				E1C602022B3378BB00C5627A /* exam_bimboNetApp.swift */,
+				E103AF902B3525E600B91DE6 /* Networking */,
 				E103AF8A2B35048200B91DE6 /* AuthFirebaseRepository */,
 				E15172692B34CBD9002040A7 /* Model */,
 				E15172672B34CB98002040A7 /* View */,
 				E15172682B34CBBF002040A7 /* ViewModel */,
 				E1C602082B33791500C5627A /* Preview Content */,
 				E15172742B34E98B002040A7 /* Support Files */,
+				E13C34AD2B37C8FC007D0EE0 /* Globals.swift */,
 			);
 			path = exam_bimboNet;
 			sourceTree = "<group>";
@@ -203,6 +287,9 @@
 				E11AD89C2B34BD6F0088B705 /* FirebaseAnalytics */,
 				E11AD89E2B34BD6F0088B705 /* FirebaseAnalyticsSwift */,
 				E11AD8A02B34BD6F0088B705 /* FirebaseAuth */,
+				E103AF8E2B350B3B00B91DE6 /* Alamofire */,
+				E12226E22B3693AC00FC6D09 /* SDWebImageSwiftUI */,
+				E12226E92B377E1B00FC6D09 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = exam_bimboNet;
 			productReference = E1C601FF2B3378BB00C5627A /* exam_bimboNet.app */;
@@ -234,6 +321,9 @@
 			mainGroup = E1C601F62B3378B500C5627A;
 			packageReferences = (
 				E11AD89B2B34BD6E0088B705 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E103AF8D2B350B3B00B91DE6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E12226E12B3693AB00FC6D09 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				E12226E82B377E1A00FC6D09 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = E1C602002B3378BB00C5627A /* Products */;
 			projectDirPath = "";
@@ -263,16 +353,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11AD8942B349FEA0088B705 /* LoginView.swift in Sources */,
+				E103AF922B35269000B91DE6 /* APIRouter.swift in Sources */,
 				E151726E2B34CE8B002040A7 /* EmailUser.swift in Sources */,
 				E15172702B34D148002040A7 /* AuthRepository.swift in Sources */,
+				E17FD2212B3536AA00C762D1 /* SpaceshipModel.swift in Sources */,
 				E1C602052B3378BB00C5627A /* AuthenticationView.swift in Sources */,
 				E11AD8962B34A6590088B705 /* RegisterView.swift in Sources */,
+				E103AF942B35293900B91DE6 /* RestAPIClient.swift in Sources */,
+				E13C34AB2B379B51007D0EE0 /* WebView.swift in Sources */,
+				E17FD2232B35403C00C762D1 /* APIService.swift in Sources */,
 				E103AF892B34ED5B00B91DE6 /* HomeView.swift in Sources */,
 				E1C602112B33845100C5627A /* LaunchView.swift in Sources */,
+				E136EC8E2B3632EF00976A1C /* DetailSpaceshipView.swift in Sources */,
 				E15172722B34D2B5002040A7 /* AuthViewModel.swift in Sources */,
+				E12226E72B3769D200FC6D09 /* SliderView.swift in Sources */,
+				E13C34A82B37954D007D0EE0 /* YTWrapperView.swift in Sources */,
 				E151726C2B34CD02002040A7 /* AuthFirebaseDataSource.swift in Sources */,
+				E13C34AE2B37C8FE007D0EE0 /* Globals.swift in Sources */,
 				E11AD8982B34A7A60088B705 /* DismissView.swift in Sources */,
 				E1C602032B3378BB00C5627A /* exam_bimboNetApp.swift in Sources */,
+				E17FD2262B35427100C762D1 /* SpaceshipViewModel.swift in Sources */,
+				E136EC8C2B35F82100976A1C /* ErrorNetwork.swift in Sources */,
+				E12226E52B36960900FC6D09 /* SpaceCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +506,7 @@
 				DEVELOPMENT_TEAM = 6S4KUGKPJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "exam-bimboNet-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +540,7 @@
 				DEVELOPMENT_TEAM = 6S4KUGKPJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "exam-bimboNet-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,6 +587,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E103AF8D2B350B3B00B91DE6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		E11AD89B2B34BD6E0088B705 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -491,9 +603,30 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		E12226E12B3693AB00FC6D09 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E12226E82B377E1A00FC6D09 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E103AF8E2B350B3B00B91DE6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E103AF8D2B350B3B00B91DE6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		E11AD89C2B34BD6F0088B705 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E11AD89B2B34BD6E0088B705 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -508,6 +641,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E11AD89B2B34BD6E0088B705 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E12226E22B3693AC00FC6D09 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E12226E12B3693AB00FC6D09 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		E12226E92B377E1B00FC6D09 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E12226E82B377E1A00FC6D09 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

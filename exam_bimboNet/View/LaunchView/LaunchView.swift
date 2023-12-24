@@ -19,7 +19,9 @@ struct LaunchView: View {
     
     var body: some View {
         ZStack{
-            Color.gray.ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [.gray, .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+            //Color.gray.ignoresSafeArea()
             
             ZStack{
                 Image(systemName: "paperplane")

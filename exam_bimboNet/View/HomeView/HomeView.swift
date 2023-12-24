@@ -10,21 +10,38 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var authViewModel: AuthViewModel
+    @ObservedObject var spaceshipViewModel = SpaceshipViewModel()
     
     var body: some View {
         NavigationView{
-            VStack{
-                Text("Bienvenido \(authViewModel.emailUser?.email ?? "No hay usuario")")
-                    .padding(.top, 35)
-                Spacer()
+            List{
+                Section(header:
+                            Text("Lanzamientos Pasados")
+                                .font(.title2)
+                                .fontWeight(.semibold),
+                        footer:
+                            Text("Sesión del usuario: \(authViewModel.emailUser?.email ?? "No hay usuario")")
+                                .font(.subheadline)){
+                                    ForEach(spaceshipViewModel.spaceships, id: \.self) { spaceship in
+                                        NavigationLink(destination: DetailSpaceshipView(spaceship: spaceship), label: {
+                                                SpaceCellView(spaceship: spaceship)
+                                        })
+                                    }
+                                }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("HOME")
+            .listStyle(.plain)
+            .navigationBarTitleDisplayMode(.large)
+            .navigationTitle("NAVES ESPACIALES X 🚀")
             .toolbar {
-                Button("Logout"){
+                Button {
                     authViewModel.logoutUser()
+                } label: {
+                    Image(systemName: "rectangle.portrait.and.arrow.right.fill")
                 }
             }
+        }.onAppear{
+            spaceshipViewModel.getSpaceships()
+            //NetworkImg.shared.changeDateFormat(dateUtc: "2020-06-30T19:55:00.000Z")
         }
     }
 }

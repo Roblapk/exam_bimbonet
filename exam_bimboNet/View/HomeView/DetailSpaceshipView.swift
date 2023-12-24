@@ -72,7 +72,7 @@ struct DetailSpaceshipView: View {
                         Button {
                             detailOptionsSheetView = .slider
                         } label: {
-                            Label("Ver las imagenes en el slider", systemImage: "photo.fill")
+                            Label("Ver el listado de imagenes", systemImage: "photo.fill")
                         }.tint(.gray)
                     }
                     .controlSize(.large)

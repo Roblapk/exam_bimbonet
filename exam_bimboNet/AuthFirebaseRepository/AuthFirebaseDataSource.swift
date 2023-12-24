@@ -16,7 +16,7 @@ final class AuthFirebaseDataSource{
         Auth.auth().createUser(withEmail: email, password: password){ authResult, error in
             
             if let error = error{
-                print("error creating: \(error.localizedDescription)")
+                //print("error creating: \(error.localizedDescription)")
                 completionBlock(.failure(error))
                 return
             }
@@ -38,7 +38,7 @@ final class AuthFirebaseDataSource{
         Auth.auth().signIn(withEmail: email, password: password){ loginResult, error in
             
             if let error = error{
-                print("error login: \(error.localizedDescription)")
+                //print("error login: \(error.localizedDescription)")
                 completionBlock(.failure(error))
                 return
             }
@@ -61,7 +61,7 @@ final class AuthFirebaseDataSource{
             if let error = error{
                 print("error saving: \(error)")
             }
-            print("saving \(ref)")
+            //print("saving \(ref)")
         }
     }
         

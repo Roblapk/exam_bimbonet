@@ -54,6 +54,10 @@ struct RegisterView: View {
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 50)
             Spacer()
+        }.onTapGesture {
+            UIApplication.shared.endEditing()
+        }.onDisappear{
+            authViewModel.errorMessage = ""
         }
     }
 }

@@ -55,10 +55,19 @@ struct LoginView: View {
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 50)
             Spacer()
+        }.onTapGesture {
+            UIApplication.shared.endEditing()
+        }.onDisappear{
+            authViewModel.errorMessage = ""
         }
     }
 }
 
+extension UIApplication{
+    func endEditing(){
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 /*struct LoginEmailView_Previews: PreviewProvider {
     static var previews: some View {
         LoginEmailView()

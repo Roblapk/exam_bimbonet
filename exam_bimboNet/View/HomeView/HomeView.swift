@@ -18,7 +18,8 @@ struct HomeView: View {
                 Section(header:
                             Text("Lanzamientos Pasados")
                                 .font(.title2)
-                                .fontWeight(.semibold),
+                                .fontWeight(.semibold)
+                                .foregroundColor(.blue),
                         footer:
                             Text("Sesión del usuario: \(authViewModel.emailUser?.email ?? "No hay usuario")")
                                 .font(.subheadline)){
